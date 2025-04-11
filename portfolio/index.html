@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!--ドクタイプ宣言　HTML5であることを宣言している-->
+<html lang="ja"> <!--webページの言語設定　日本語がja-->
+
+<!--ここはブラウザ上で表示されない-->
+<head> <!--ページの情報を記述-->
+    <meta charset="UTF-8"> <!--文字コードの指定-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--ページの説明文　よくわからん-->
+    <title>自己紹介サイト</title><!--ページのタイトルを記述-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!--これ以降がブラウザ上で表示される-->
+<body><!--ページのコンテンツを入力-->
+
+    <!--header ヘッダー部分を作る-->
+    <header>
+        <h1>自己紹介サイト</h1>
+        <nav>
+            <ul>
+                <li ><a href="">自己紹介</a></li>
+                <li ><a href="">地域連携課題演習</a></li>
+                <li ><a href="">VitaLink</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--ページのメインコンテンツ-->
+    <main>
+    <section>
+        <h2>自己紹介</h2>
+        <!--img 画像を表示するタグ-->
+        <img src="images/myphoto.jpg" alt="自分の画像"><!--src どの画像か　alt　画像が表示されないときのテキスト-->
+
+        <!--ul + li 箇条書きリストを作るタグ
+        <ul>
+            <li>名前：税所樹磨</li>
+            <li>学籍番号：T223056</li>
+            <li>出身地：新潟</li>
+            <li>趣味：登山、筋トレ、
+                <!--a リンクをはるタグ
+                <a href="https://www.sus.ac.jp/topics/20250127-1/">献血</a><!--target="_blank" で別タブで表示
+            </li>
+        </ul>
+    -->
+        <table border="1">
+            <tr>
+                <td>名前</td>
+                <td>税所樹磨</td>
+            </tr>
+            <tr>
+                <td>学籍番号</td>
+                <td>T223056</td>
+            </tr>
+            <tr>
+                <td>出身地</td>
+                <td>新潟県</td>
+            </tr>
+            <tr>
+                <td>趣味</td>
+                <td>登山、筋トレ、<a href="https://www.sus.ac.jp/topics/20250127-1/">献血</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <article>
+        <h2>地域連携課題演習</h2>
+        <p>協力団体：茅野市×諏訪中央病院</p>
+        <p>提出したアイディア：サービス実績表の電子化</p>
+    </article>
+
+    <article>
+        <h2>VitaLink</h2>
+        <p>フロントエンドを学び、地域連携課題演習で提案したアイディアを実現したい</p>
+        <p>余裕があったらセンサーなどにも触れていきたい</p>
+    </article>
+
+    <!--質問フォーム-->
+    <form action="" method="post" name="question-form">
+        <h3>名前</h3>
+        <input type="text" placeholder="名字 名前">
+        <h3>メールアドレス</h3>
+        <input type="email" placeholder="">
+        <h3>メッセージ</h3>
+        <!--複数行テキスト入力欄-->
+        <textarea name="message" placeholder="メッセージを入力"></textarea>
+        <!--送信ボタン-->
+        <input type="submit" value="送信する">
+    </form>
+
+    <!--フッター部分-->
+    <footer>
+        <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">X</a></li>      
+        </ul>
+    </footer>
+</body>
+</html>
